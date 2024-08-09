@@ -1,0 +1,128 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=PROGRAM COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+LD     I0.0
+AN     T37
+TON    T37, 2
+Network 2 
+LD     T37
+LD     C12
+CTU    C0, 1
+Network 3 
+LD     C0
+S      Q0.1, 1
+R      Q0.0, 1
+Network 4 
+LD     T37
+LD     C12
+CTU    C1, 2
+Network 5 
+LD     C1
+S      Q0.2, 1
+R      Q0.1, 1
+Network 6 
+LD     T37
+LD     C12
+CTU    C2, 3
+Network 7 
+LD     C2
+S      Q0.3, 1
+R      Q0.2, 1
+Network 8 
+LD     T37
+LD     C12
+CTU    C3, 4
+Network 9 
+LD     C3
+S      Q0.4, 1
+R      Q0.3, 1
+Network 10 
+LD     T37
+LD     C12
+CTU    C4, 5
+Network 11 
+LD     C4
+S      Q0.5, 1
+R      Q0.4, 1
+Network 12 
+LD     T37
+LD     C12
+CTU    C5, 6
+Network 13 
+LD     C5
+S      Q0.6, 1
+R      Q0.5, 1
+Network 14 
+LD     T37
+LD     C12
+CTU    C6, 7
+Network 15 
+LD     C5
+S      Q0.7, 1
+R      Q0.6, 1
+Network 16 
+LD     T37
+LD     C12
+CTU    C7, 8
+Network 17 
+LD     C5
+S      Q0.6, 1
+R      Q0.7, 1
+Network 18 
+LD     T37
+LD     C12
+CTU    C8, 9
+Network 19 
+LD     C8
+S      Q0.5, 1
+R      Q0.6, 1
+Network 20 
+LD     T37
+LD     C12
+CTU    C9, 10
+Network 21 
+LD     C9
+S      Q0.4, 1
+R      Q0.5, 1
+Network 22 
+LD     T37
+LD     C12
+CTU    C10, 11
+Network 23 
+LD     C10
+S      Q0.3, 1
+R      Q0.4, 1
+Network 24 
+LD     T37
+LD     C12
+CTU    C11, 12
+Network 25 
+LD     C11
+S      Q0.2, 1
+R      Q0.3, 1
+Network 26 
+LD     T37
+LD     C12
+CTU    C12, 13
+Network 27 
+LD     C12
+S      Q0.1, 1
+R      Q0.2, 1
+Network 28 
+LDN    T37
+=      Q0.0
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=INTERRUPT ROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_INTERRUPT_BLOCK
