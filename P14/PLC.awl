@@ -1,0 +1,58 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=PROGRAM COMMENTS
+BEGIN
+Network 1 
+LD     SM0.1
+CALL   SBR0
+Network 2 
+LD     Q0.1
+=      I0.6
+Network 3 // Network Title
+// Network Comment
+LD     I0.6
+EU
+LD     C0
+CTU    C0, 25000
+Network 4 
+LD     I0.6
+EU
+CALL   SBR1
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 
+LD     SM0.0
+LPS
+MOVW   200, SMW78
+AENO
+MOVD   25000, SMD82
+LPP
+MOVB   2#10000101, SMB77
+AENO
+PLS    1
+Network 2 // Network Title
+// Network Comment
+END_SUBROUTINE_BLOCK
+SUBROUTINE_BLOCK HSC_INIT:SBR1
+TITLE=
+BEGIN
+Network 1 // Instruction Wizard HSC
+// To enable this configuration within the program, Use SM0.1 or an edge-triggered instruction to call this Subroutine once from the MAIN program block.  
+// Configure HC1 for Mode 0; CV = 0; PV = 0; count UP; 
+// Enable interrupts and start counter.
+// 
+LD     SM0.0
+MOVB   16#F8, SMB47                //Set control bits: count UP; enabled; 
+MOVD   +0, SMD48                   //Load CV
+MOVD   +0, SMD52                   //Load PV
+HDEF   1, 0
+ENI
+HSC    1
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=INTERRUPT ROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_INTERRUPT_BLOCK
